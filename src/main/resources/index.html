@@ -2,11 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/main.css">
     <title>JS Client</title>
 </head>
 <body>
-    <div id="root">
-        <canvas width="2000px" height="2000px" id="myCanvas"></canvas>
+    <div class="root">
+        <div class="left_part">
+			<div class="canvas_wrap">
+				<canvas width="2000px" height="2000px" id="myCanvas"></canvas>
+			</div>
+			<div class="description">
+				<list>
+					<li>Первый пункт</li>
+					<li>Первый пункт</li>
+					<li>Первый пункт</li>
+					<li>Первый пункт</li>
+					<li>Первый пункт</li>
+					<li>Первый пункт</li>
+					<li>Первый пункт</li>
+				</list>
+			</div>
+		</div>
+		<div class="right_part">
+			<div class="settings">
+				<list class="settings_list">
+					<li><button type="button" id="display">Начачь расчет</button></li>
+					<li>
+						<label>
+							Частота обновления, %
+							<input type="range" min="0" max="100" id="display_frequency">
+						</label>
+					</li>
+					<li><button type="button" id="clear">Очистить поле</button></li>
+					<li><button type="button" id="set_start_point">Установить начало</button></li>
+					<li><button	type="button" id="set_end_point">Установить конец</button></li>
+					<li><button	type="button" id="set_wall">Установить стену</button></li>
+				<list>
+			</div>
+		</div>
     </div>
 <script src="webappk.js"></script>
 </body>
